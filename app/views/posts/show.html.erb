@@ -1,0 +1,37 @@
+
+  <p class="notice"><%= notice %></p>
+  
+  <div class="sidebar">
+  <h3>Tips</h3>
+  <p>你现在看到的就是已经被提出的问题以及已有的回答，你可以在下面的回答栏里继续填写并创建你的回答。</p>
+  </div>
+  
+  <div class="question_diplay">
+  <p>
+    <b>Name:</b>
+    <%= @post.name %>
+  </p>
+
+  <p>
+    <b>Title:</b>
+    <%= @post.title %>
+  </p>
+
+  <p>
+    <b>Content:</b>
+    <%= @post.content %>
+  </p></div>
+ 
+  <h2>Comments</h2>
+  <div class="comments_block">
+  <%= render @post.comments %>
+</div>
+
+
+  <h2>Add a comment:</h2>
+    <%= render "comments/form" %>
+  <br />
+
+<%= link_to 'Edit question', edit_post_path(@post) %> |
+<%= link_to 'Back to questions', posts_path %> |
+

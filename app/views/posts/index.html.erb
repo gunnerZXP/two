@@ -1,0 +1,35 @@
+
+<h1>Listing questions</h1>
+  <hr/>
+<table>
+  <% @post.each do |post| %>
+  <tr class="content_block">
+    <th>Title:</th>
+      <td><%= post.title %></td>
+  </tr>
+  <tr class="content_block"> 
+      <th>By:</th>
+      <td><%= post.name %></td>
+  </tr>
+  <tr class='content_block'>
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+  <% end %>
+
+   <div class="sidebar">
+    <h3>Tips</h3>
+      <p>你现在看到的是所有问题的列表，你可以点击"show"来获取问题的详细信息以及问题的回复。如果你有新的问题需要提出，请点击"New questions"。</p>
+  </div>
+
+</table>
+
+<br />
+   <%= paginate @post %>
+<br />
+
+ <%= link_to 'New questions', new_post_path %> |
+ <%= link_to 'Back',request.referer %>
+ |
+ <p id="back_home"><a href="/">返回首页</a></p> 

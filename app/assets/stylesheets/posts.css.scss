@@ -1,0 +1,45 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* for poste_show */
+.comments_block {
+	background-color: gray;
+}
+.sidebar {
+    float: right;
+	width: 185px;
+    margin: 1px 0;
+    color: green;
+    background-color: #F5FFE8;
+}
+.sidebar h3 {
+	padding: 10px 80px;
+	margin: 0 1px;
+}
+.sidebar p {
+	padding: 1px 10px;
+}
+.question_display {
+	width: 680px;
+	margin: 25px 0;
+}
+.comments_block {
+	margin :5px 0;
+	margin-top: 20px;
+}
+ h2 {
+	margin-top: 40px;
+}
+
+/* for post_index */
+.content_block {
+	position: relation;
+	padding: 10px ;
+	margin: 2px 5px;
+}
+#back_home {
+	font-style: italic;
+	text-align: left;
+	margin-top: 0.5em;
+}
