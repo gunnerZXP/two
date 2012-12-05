@@ -2,7 +2,7 @@ Sample::Application.routes.draw do
   resources :posts, :articles do
     resources :comments
   end
-  resources :home,:articles, :demo1, :demo2
+  resources :home, :articles, :demo1, :demo2
 
 
   # The priority is based upon order of creation:
@@ -54,7 +54,7 @@ Sample::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'home#index'
+   root :to => 'posts#index'
 
   # See how all your routes lay out with "rake routes"
 
