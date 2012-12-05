@@ -1,5 +1,5 @@
 Sample::Application.routes.draw do
-  root :to => 'home#index'
+  root :to => 'posts#index1'
   resources :posts, :articles do
     resources :comments
   end
