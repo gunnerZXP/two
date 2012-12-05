@@ -1,1 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title> A Sample Web Site</title>
+    <meta name="description" content="a sample qustions-answers web site" />
+    <meta name="keywords" content="qustions,answers,records" />
+    <%= stylesheet_link_tag "home", :media => "all" %>
+    <%= stylesheet_link_tag "style", :media => "all" %>
+    <%= javascript_include_tag "model" %>
+    <!--[if lt IE 9]>
+			<style>
+				.content{
+					height: auto;
+					margin: 0;
+				}
+				.content div {
+					position: relative;
+				}
+			</style>
+		<![endif]-->
+
+</head>
+<body>
+<div class="container">
+  <header>
+	 <h1> 一个简单的问答网站<span></span></h1>
+	   <h2>主页的布局copy<a href="http://tympanus.net/codrops/2012/04/12/animated-content-tabs-with-css3">这里</a></h2>
+		  <nav class="codrops-demos">
+					<a class="current-demo" href="posts#index">问 答</a>
+					<a href="articles#index">文 章</a>
+					<a href="demo1#index">吐 槽</a>
+					<a href="demo2#index">待 续</a>
+		  </nav>
+  </header>
+    <section class="tabs">
+	    <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+		   <label for="tab-1" class="tab-label-1">About</label>
+		
+		<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+		   <label for="tab-2" class="tab-label-2">Services</label>
+		
+	    <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+		   <label for="tab-3" class="tab-label-3">Study</label>
+			
+	    <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+		   <label for="tab-4" class="tab-label-4">Contact</label>
+            
+		<div class="clear-shadow"></div>
+				
+		    <div class="content">
+			    <div class="content-1">
+				    <h2>About us</h2>
+                        <p>这里有<span><a href="">纯屌丝</a></span>,<a href="">伪屌丝</a>,<a href="">高帅富</a>,品种多样,款式新颖,走过路过,不要错过,这里就是长沙左家垅男子职业技术学校.</p>
+						<h3>How we work</h3>
+						<p> use linux, ruby on rails, google.<br/>屌丝的成长，都是一把把的心酸泪。</p>
+				</div>
+			    <div class="content-2">
+				    <h2>Services</h2>
+                        <p>问答网站是什么?比如百度知道, StackOverflow.当然,相比于前者来说,后者着实优越了许多.<br/>StackOverflow 提供高质量的问答内容,这是其受欢迎的根本.本网站只是最简单,最原始的post positions---post answers.</p>
+						<h3>Excellence</h3>
+						<p>How to make your own an excellence technicalist?<br/>Learn to share, persevere, plan and manage your time and energy reasonably, do what really meaningful with high efficiency, and not to despise anyone, having an open mind of learning from others.</p>
+				</div>
+			    <div class="content-3">
+				    <h2>Ruby China</h2>
+                        <p>Ruby China 是一个非营利组织,创立与 2010 年 10 月,它旨在为中国的 Ruby 和 Rails 爱好者提供一个自由,开放的交流平台.虽然这是一个后面起来的 Ruby 社区,但目前已经成为了国内 Ruby 爱好者公认的平台.</p>
+						<h3>GitHub</h3>
+						<p>GitHub于2008年上线,目前,除了Git代码仓库托管及基本的Web管理界面以外,还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。正因为这些功能所提供的便利,又经过长期的积累,GitHub的用户活跃度很高,在开源世界里享有深远的声望,形成了所谓的社交化编程文化（Social Coding）.</p>
+				</div>
+				<div class="content-4">
+					<h2>statement</h2>
+                        <p>你也看到了,我只是简单的push了一个app到heroku上,功能极其简单,主要基于ruby on rails web开发框架,只是希望通过慢慢的学习,能不断丰富各种功能,如果有大神不吝赐教,感激不尽.<br/>另外,感谢我的好基友们,是他们一直在帮助我.</p>
+						<h3>Get in touch</h3>
+						<p>如果你也在学习web相关知识的话,请与我联系:<br/>
+                           e-mail:zhangxiupan@gmail.com. <br/> 
+                          <%= link_to image_tag("icon-twitter.jpg", alt: "Twitter"),'http://twitter.com/sessions' %>&nbsp;<%= link_to image_tag("icon-facebook.jpg", alt: "Facebook") ,'http://facebook.com/sessions' %></p>
+			    </div>
+		    </div>
+		</section>
+    </div>
+    <div class="footer">
+    	<p>©vector2012 |<%= Time.now.strftime("%Y-%m-%d %I:%M %P") %></p>
+    </div>
+</body>
+</html>
+
 
