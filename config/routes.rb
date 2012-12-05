@@ -2,7 +2,7 @@ Sample::Application.routes.draw do
   resources :posts, :articles do
     resources :comments
   end
-  resources :articles, :demo1, :demo2
+  resources :home,:articles, :demo1, :demo2
 
 
   # The priority is based upon order of creation:
